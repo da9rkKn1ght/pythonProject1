@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c34033f0-0222-4b43-9b8f-0b4ec1af754e" name="Changes" comment="" />
+    <list default="true" id="c34033f0-0222-4b43-9b8f-0b4ec1af754e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models_database/product_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models_database/product_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models_database/product_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models_database/product_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/models_database/products_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/Без_названия.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/Без_названия_1.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models_database/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/models_database/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models_database/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/models_database/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online_store/urls.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;da9rkKn1ght&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/da9rkKn1ght/pythonProject1.git&quot;,
+    &quot;accountId&quot;: &quot;12df0459-5303-417e-ad5f-e7f102a25783&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2n9oDdrf0uoi9k5kbOkHiUFRcze" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -18,7 +62,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "promo.database"
   }
 }]]></component>
   <component name="SharedIndexes">
