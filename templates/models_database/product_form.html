@@ -8,6 +8,21 @@
     <form method="POST" enctype="multipart/form-data">
         {% csrf_token %}
         {{ form.as_p }}
+        {% if form.errors %}
+            <div class="alert alert-danger">
+                <strong>Ошибки при заполнении формы:</strong>
+                <ul>
+                    {% for field in form %}
+                        {% if field.errors %}
+                            <li>{{ field.label }}: {{ field.errors|striptags }}</li>
+                        {% endif %}
+                    {% endfor %}
+                    {% for error in form.non_field_errors %}
+                        <li>{{ error|striptags }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
         <button type="submit" class="btn btn-primary">Сохранить изменения</button>
         <a href="{% url 'product_detail' product.pk %}" class="btn btn-secondary">Отмена</a>
     </form>
