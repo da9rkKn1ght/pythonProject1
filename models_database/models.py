@@ -52,8 +52,8 @@ class Category(models.Model):
 class Product(models.Model):
     product_name = models.CharField(verbose_name='Название продукта', max_length=100)
     description = models.CharField(verbose_name='Описание продукта', max_length=255, default='Описание продукта')
-    price = models.PositiveIntegerField(verbose_name='Стоимость')
-    quantity = models.PositiveIntegerField(verbose_name='Количество')
+    price = models.PositiveIntegerField(verbose_name='Стоимость',)
+    quantity = models.PositiveIntegerField(verbose_name='Количество', null=True, blank=True)
     image = models.ImageField(upload_to='products/', null=True, blank=True)
     category = models.ForeignKey(
         'Category',

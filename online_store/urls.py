@@ -19,9 +19,22 @@ from django.urls import path
 from django.conf.urls.static import static
 from django.conf import settings
 from models_database import views
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+
+router.register('users', views.UserAPI, basename='users')
+router.register('usersprofiles', views.UserProfilesAPI, basename='usersprofiles')
+router.register('categories', views.CategoryAPI, basename='categories')
+router.register('products', views.ProductAPI, basename='products')
+router.register('orders', views.OrderAPI, basename='orders')
+router.register('orderitems', views.OrderItemAPI, basename='orderitems')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('schema/', SpectacularAPIView.as_view(), name='schema'),
+    path('swagger/', SpectacularSwaggerView.as_view(url_name='schema')),
     path('products_list/', views.ProductsList.as_view(), name='products_list'),
     path('product_create/', views.ProductCreate.as_view(), name='product_create'),
     path('product/<int:pk>/detail/', views.ProductDetail.as_view(), name='product_detail'),
@@ -30,4 +43,4 @@ urlpatterns = [
 ]
 
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + router.urls
